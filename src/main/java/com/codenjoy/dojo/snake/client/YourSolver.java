@@ -34,22 +34,11 @@ import com.codenjoy.dojo.services.RandomDice;
  */
 public class YourSolver implements Solver<Board> {
 
-//    private Dice dice;
-//    private Board board;
-//
-//    public YourSolver(Dice dice) {
-//        this.dice = dice;
-//    }
-
     @Override
     public String get(Board board) {
         MyAlgorithm ma=new MyAlgorithm(board);
         Direction solved = ma.solve();
         return solved.toString();
-//        this.board = board;
-//        System.out.println(board.toString());
-//
-//        return Direction.LEFT.toString();
     }
 
     public static void main(String[] args) {
